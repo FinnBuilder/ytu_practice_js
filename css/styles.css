@@ -1,0 +1,12 @@
+.shoppingCartContainer{
+    background-color: aquamarine;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+button{
+    background-color: yellow;
+    box-shadow: 5px 5px 5px black;
+    width: 65px;
+}

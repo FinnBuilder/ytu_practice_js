@@ -4,13 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS Practice</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="script" href="./scripts.js">
-  <link rel="icon" href="./jsFavicon.png">
-  <script src="./scripts.js" defer></script>
-    
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./img/jsFavicon.png">
+  <script src="./js/scripts.js" defer></script>
 </head>
 <body>
+  <div class="shoppingCartContainer">
+  <button onclick="
+    console.clear(); 
+    console.log(`Cart quantity: ${cartQuantity}`);">Show Quantity</button>
+    <br>
+  <button onclick="
+    console.clear();
+    cartQuantity++;
+    console.log(`Cart quantity: ${cartQuantity}`)";
+    
+    >+1</button>
+  <button onclick="
+    console.clear();
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">+2</button>
+  <button>+3</button>
+  <button>+4</button>
+  <button>+5</button>
+  <br>
+  <button onclick="
+    console.clear();
+    cartQuantity--;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">-1</button>
+  <button>-2</button>
+  <button>-3</button>
+  <button>-4</button>
+  <button>-5</button>
+
+  <br>
+  <button onclick="
+    cartQuantity = 0;
+    console.clear();
+    console.log(`Cart was reset.`);
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Reset Cart</button>
+  </div>
   
 
 </body>
